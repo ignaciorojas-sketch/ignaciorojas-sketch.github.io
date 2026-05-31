@@ -1,326 +1,123 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
-
-# Basic Site Settings
+```yaml
+# =============================================================================
+# CONFIGURACIÓN GENERAL
+# =============================================================================
 locale                   : "es-ES"
-site_theme               : "contrast" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "contrast"
 title                    : "GeoScientist"
 title_separator          : "-"
 name                     : &name "Ignacio Rojas-Rubio"
-description              : &description "Espacio de difusión de la geografía crítica, la filosofía política y la música urbana desde el puerto olvidado de Valparaíso_Chile para todo los rincones del mundo."   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : "https://ignaciorojasgeo.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+description              : &description "Espacio de difusión de la geografía crítica, la filosofía política y la música urbana desde el puerto olvidado de Valparaíso, Chile."
+url                      : "https://ignaciorojasgeo.github.io"
+baseurl                  : ""
 repository               : "ignaciorojasgeo/ignaciorojasgeo.github.io"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+# =============================================================================
+# PERFIL DEL AUTOR (Sidebar)
+# =============================================================================
 author:
-  # Biographic information
   avatar           : "profile.png"
   name             : "Ignacio Rojas-Rubio"
   pronouns         : "Dr."  
-  bio              : "Investigador en geografía crítica (Ignacio Rojas-Rubio, Ignacio Rojas Rubio), docente en la Universidad de Playa Ancha (Profe Nacho) y selector/coleccionista de vinilos (GEO). Pensando el espacio y habitando el sonido como un 'Scientist of Dub'."
+  bio              : "Investigador en geografía crítica, docente en la Universidad de Playa Ancha (Profe Nacho) y selector de vinilos (GEO). Pensando el espacio y habitando el sonido como un 'Scientist of Dub'."
   location         : "Valparaíso-Chile"
   employer         : "Universidad de Playa Ancha - Valparaíso, Chile"
   uri              : "https://ignaciorojasgeo.github.io"
   email            : "ignacio.rojas@upla.cl" 
 
-  # Academic websites
+  # Redes Científicas
   googlescholar    : "https://share.google/wu2s3Xk1q2yfFZn62"
   orcid            : "https://orcid.org/0000-0001-5003-141X?lang=es"
   scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57204360068"
-
-
-  # Repositories and software development
   github           : "ignaciorojasgeo"
 
-  # Social media
-  instagram        : ["@profe_nacho_upla","@geo.selektor"]
+  # Redes de Difusión y Música
+  instagram        : ["@profe_nacho_upla", "@geo.selektor"]
   soundcloud       : "https://soundcloud.com/geoselector"
   youtube          : "@ignaciorojasgeo"
   Applemusic       : "@irojas_rubio"
 
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
-
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
-
-
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-
-# Social Sharing
-twitter:
-  username               : &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-
-# Analytics
-analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-  google:
-    tracking_id          :
-
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-  - files
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .github
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Dockerfile
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - local
-  - log
-  - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
-  - vendor
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# These settings control the types of collections used by the template
+# =============================================================================
+# COLECCIONES PERSONALIZADAS (Collections)
+# =============================================================================
+# Definimos las secciones de contenido estructurado e independiente del blog.
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
-    permalink: /:collection/:path/
-  portfolio:
+    permalink: /publications/:path/
+  pasantias:
     output: true
-    permalink: /:collection/:path/
-  talks:
+    permalink: /pasantias/:path/
+  terreno:
     output: true
-    permalink: /:collection/:path/
+    permalink: /terreno/:path/
+  musica:
+    output: true
+    permalink: /musica/:path/
 
+# =============================================================================
+# CATEGORÍAS PARA LA SECCIÓN DE PUBLICACIONES ACADÉMICAS
+# =============================================================================
+publication_category:
+  books:
+    title: 'Libros'
+  chapters:
+    title: 'Capítulos de Libros'
+  manuscripts:
+    title: 'Artículos Científicos'    
+  conferences:
+    title: 'Ponencias y Congresos'
 
-# These settings control how pages and collections are included in the site
+# =============================================================================
+# AJUSTES DE COMPILACIÓN Y CONFIGURACIÓN GENERAL
+# =============================================================================
+teaser                   : 
+breadcrumbs              : true
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+talkmap_link             : false
+
 defaults:
-  # _posts
+  # Valores por defecto para el blog posts
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
       read_time: true
       comments: true
       share: true
-      related: true
-  # _pages
+  # Valores por defecto para publicaciones académicas
   - scope:
       path: ""
-      type: pages
+      type: "publications"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
-  # _teaching
+  # Valores por defecto para trabajo en terreno y fotos
   - scope:
       path: ""
-      type: teaching
+      type: "terreno"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
-      share: true
-      comments: true
-  # _publications
+  # Valores por defecto para música y vinilos
   - scope:
       path: ""
-      type: publications
+      type: "musica"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+
+comments:
+  provider               : false
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "gh-pages"
+  commitMessage          : "Nuevo comentario."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
 
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
-
-# Mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - https://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
