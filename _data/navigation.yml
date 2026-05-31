@@ -1,33 +1,34 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+
+# =============================================================================
+# MENÚ DE NAVEGACIÓN PRINCIPAL (Barra superior)
+# =============================================================================
+# Este archivo define los enlaces que aparecerán en la barra de navegación.
+# Puedes activar, desactivar o reordenar las secciones según tus prioridades.
 
 main:
-  - title: "Publications"
+  # 1. Página de Inicio
+  - title: "Inicio"
+    url: /
+
+  # 2. Tu producción científica dura (Libros, Artículos, Bibliografías temáticas)
+  - title: "Investigación"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  # 3. Columnas de Blog (Academia, Política, Notas Técnicas y Noticias UPLA)
+  - title: "Bitácora & Columnas"
+    url: /blog/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+  # 4. Trabajo de Campo (Materiales pedagógicos, bitácoras de terreno y fotografía)
+  - title: "Terreno & Fotos"
+    url: /trabajo-terreno/
+
+  # 5. Dimensión Sonora (Colección de vinilos, sesiones de selector y producciones propias)
+  - title: "Sonido & Vinilos"
+    url: /sonido-y-vinilos/
+
+  # 6. Trayectoria Académica (Pasantías de investigación, canal de YouTube y docencia)
+  - title: "Trayectoria & Medios"
+    url: /trayectoria/
+
+```
+
