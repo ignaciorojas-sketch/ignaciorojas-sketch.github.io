@@ -8,15 +8,15 @@
 
 # Basic Site Settings
 locale                   : "es-ES"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "contrast" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "GeoScientist"
 title_separator          : "-"
 name                     : &name "Ignacio Rojas-Rubio"
 description              : &description "Espacio de difusión de la geografía crítica, la filosofía política y la música urbana desde el puerto olvidado de Valparaíso_Chile para todo los rincones del mundo.""   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : "https://ignaciorojasgeo.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "ignaciorojasgeo/ignaciorojasgeo.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -25,11 +25,11 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
+  pronouns         : "Dr."  
   bio              : "Investigador en geografía crítica (Ignacio Rojas-Rubio, Ignacio Rojas Rubio), docente en la Universidad de Playa Ancha (Profe Nacho) y selector/coleccionista de vinilos (GEO). Pensando el espacio y habitando el sonido como un "Scientist of Dub""
   location         : "Valparaíso-Chile"
   employer         : "Universidad de Playa Ancha - Valparaíso, Chile"
-  uri              : # URL
+  uri              : "https://ignaciorojasgeo.github.io"
   email            : "ignacio.rojas@upla.cl" 
 
   # Academic websites
