@@ -24,7 +24,7 @@ repository               : "ignaciorojasgeo/ignaciorojasgeo.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Ignacio Rojas-Rubio"
   pronouns         : "Dr."  
   bio              : "Investigador en geografía crítica (Ignacio Rojas-Rubio, Ignacio Rojas Rubio), docente en la Universidad de Playa Ancha (Profe Nacho) y selector/coleccionista de vinilos (GEO). Pensando el espacio y habitando el sonido como un "Scientist of Dub""
   location         : "Valparaíso-Chile"
@@ -42,7 +42,7 @@ author:
   github           : "ignaciorojasgeo"
 
   # Social media
-  instagram        : "@profe_nacho_upla","@geo.selektor"
+  instagram        : ["@profe_nacho_upla","@geo.selektor"]
   soundcloud       : "https://soundcloud.com/geoselector"
   youtube          : "@ignaciorojasgeo"
   Applemusic       : "@irojas_rubio"
