@@ -7,9 +7,9 @@ title            : "GeoScientist"
 title_separator  : "-"
 name             : "Ignacio Rojas-Rubio"
 description      : "Espacio de difusión de la geografía crítica, la filosofía política y la música urbana desde el puerto olvidado de Valparaíso, Chile."
-url              : "https://ignaciorojasgeo.github.io"
+url              : "https://ignaciorojas-sketch.github.io"
 baseurl          : ""
-repository       : "ignaciorojasgeo/ignaciorojasgeo.github.io"
+repository       : "ignaciorojas-sketch/ignaciorojas-sketch.github.io"
 
 # =============================================================================
 # PERFIL DEL AUTOR (Sidebar)
@@ -108,7 +108,7 @@ defaults:
 comments:
   provider       : false
 
-# Motor de compilación nativo para GitHub Pages
+# Motor de compilación nativo para GitHub Pages (Sin plugins conflictivos)
 safe: false
 plugins:
   - jekyll-paginate
