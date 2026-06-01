@@ -1,15 +1,15 @@
 # =============================================================================
 # CONFIGURACIÓN GENERAL
 # =============================================================================
-locale                   : "es-ES"
-site_theme               : "contrast"
-title                    : "GeoScientist"
-title_separator          : "-"
-name                     : &name "Ignacio Rojas-Rubio"
-description              : &description "Espacio de difusión de la geografía crítica, la filosofía política y la música urbana desde el puerto olvidado de Valparaíso, Chile."
-url                      : "https://ignaciorojasgeo.github.io"
-baseurl                  : ""
-repository               : "ignaciorojasgeo/ignaciorojasgeo.github.io"
+locale           : "es-ES"
+site_theme       : "contrast"
+title            : "GeoScientist"
+title_separator  : "-"
+name             : "Ignacio Rojas-Rubio"
+description      : "Espacio de difusión de la geografía crítica, la filosofía política y la música urbana desde el puerto olvidado de Valparaíso, Chile."
+url              : "https://ignaciorojasgeo.github.io"
+baseurl          : ""
+repository       : "ignaciorojasgeo/ignaciorojasgeo.github.io"
 
 # =============================================================================
 # PERFIL DEL AUTOR (Sidebar)
@@ -30,11 +30,11 @@ author:
   scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57204360068"
   github           : "ignaciorojasgeo"
 
-  # Redes de Difusión y Música (Corregido a texto simple)
+  # Redes de Difusión y Música
   instagram        : "geo.selektor"
   soundcloud       : "geoselector"
   youtube          : "@ignaciorojasgeo"
-  Applemusic       : "@irojas_rubio"
+  applemusic       : "@irojas_rubio"
 
 # =============================================================================
 # COLECCIONES PERSONALIZADAS (Collections)
@@ -69,12 +69,12 @@ publication_category:
 # =============================================================================
 # AJUSTES DE COMPILACIÓN Y CONFIGURACIÓN GENERAL
 # =============================================================================
-teaser                   : 
-breadcrumbs              : true
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled"
-talkmap_link             : false
+teaser           : 
+breadcrumbs      : true
+words_per_minute : 160
+future           : true
+read_more        : "disabled"
+talkmap_link     : false
 
 defaults:
   - scope:
@@ -106,21 +106,9 @@ defaults:
       author_profile: true
 
 comments:
-  provider               : false
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages"
-  commitMessage          : "Nuevo comentario."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
+  provider       : false
 
----
-layout: archive
-title: "Publications"
-permalink: /publications/
-author_profile: true
----
-
+# Motor de compilación nativo para GitHub Pages
 safe: false
 plugins:
   - jekyll-paginate
@@ -128,6 +116,3 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
-theme: null
-remote_theme: null
