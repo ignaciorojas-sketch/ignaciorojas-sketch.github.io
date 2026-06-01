@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-Espacio dedicado a la producción científica en geografía crítica, planificación territorial y teoría del espacio. Aquí encontrarás libros, capítulos de libros, artículos científicos indexados y ponencias presentadas en congresos.
+Producción científica en geografía crítica, teoría del espacio, filosofía política y vivienda, junto con investigaciones sobre geografías sonoras y música urbana.. Aquí encontrarás libros, capítulos de libros, artículos científicos indexados y ponencias presentadas en congresos.
 
 ---
 
