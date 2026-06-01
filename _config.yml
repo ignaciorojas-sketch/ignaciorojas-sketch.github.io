@@ -128,3 +128,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
+theme: null
+remote_theme: null
