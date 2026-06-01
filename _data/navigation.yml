@@ -1,34 +1,29 @@
-
 # =============================================================================
 # MENÚ DE NAVEGACIÓN PRINCIPAL (Barra superior)
 # =============================================================================
 # Este archivo define los enlaces que aparecerán en la barra de navegación.
-# Puedes activar, desactivar o reordenar las secciones según tus prioridades.
 
 main:
   # 1. Página de Inicio
   - title: "Inicio"
     url: /
 
-  # 2. Tu producción científica dura (Libros, Artículos, Bibliografías temáticas)
+  # 2. Tu producción científica dura (Libros, Artículos)
   - title: "Investigación"
     url: /publications/
 
-  # 3. Columnas de Blog (Academia, Política, Notas Técnicas y Noticias UPLA)
+  # 3. Columnas de Blog (Academia, Política, Notas Técnicas)
   - title: "Bitácora & Columnas"
-    url: /blog/
+    url: /year-archive/
 
   # 4. Trabajo de Campo (Materiales pedagógicos, bitácoras de terreno y fotografía)
   - title: "Terreno & Fotos"
-    url: /trabajo-terreno/
+    url: /terreno/
 
-  # 5. Dimensión Sonora (Colección de vinilos, sesiones de selector y producciones propias)
+  # 5. Dimensión Sonora (Colección de vinilos, sesiones de selector y crónicas)
   - title: "Sonido & Vinilos"
     url: /sonido-y-vinilos/
 
   # 6. Trayectoria Académica (Pasantías de investigación, canal de YouTube y docencia)
   - title: "Trayectoria & Medios"
     url: /trayectoria/
-
-```
-
